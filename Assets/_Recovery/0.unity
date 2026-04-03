@@ -30083,11 +30083,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3725063457362557941, guid: 9e9ff244b314d984283f049c1437eb80, type: 3}
   m_PrefabInstance: {fileID: 482283698}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &483256831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 386838319475554025, guid: dab5611a748ad174a85756ee868c2b19, type: 3}
-  m_PrefabInstance: {fileID: 2079260479}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &483991041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67599,48 +67594,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1014862196584819795, guid: dab5611a748ad174a85756ee868c2b19, type: 3}
   m_PrefabInstance: {fileID: 2079260479}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1158083290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483256831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a09a44bfe30044482aa6b6f43383c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
---- !u!114 &1158083291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483256831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: db0186eaf87cd6c4ba2939763733e2a9, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!4 &1158231439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7461503242548085218, guid: d3e101d685554b345bdd4a1fb47c57be, type: 3}
@@ -121451,13 +121404,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 386838319475554025, guid: dab5611a748ad174a85756ee868c2b19, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1158083291}
-    - targetCorrespondingSourceObject: {fileID: 386838319475554025, guid: dab5611a748ad174a85756ee868c2b19, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1158083290}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dab5611a748ad174a85756ee868c2b19, type: 3}
 --- !u!1001 &2080584539
 PrefabInstance:
