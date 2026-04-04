@@ -7,12 +7,15 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     private Vector2 _curMovementInput;
     private Rigidbody _rigidbody;
+    private Animator _animator;
+    private int _combo = Animator.StringToHash("Combo");
 
     private void Awake()
     {
         //_inputAction = new InputAction();
         //_inputAction.
         _rigidbody = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();  
     }
     private void Update()
     {
@@ -36,5 +39,23 @@ public class Player : MonoBehaviour
         {
             _curMovementInput = Vector2.zero;
         }
+    }
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        _animator.SetTrigger("Attack");
+        IncreaseCombo();
+    }
+    private void IncreaseCombo()
+    {
+        
+        int currentCombo = _animator.GetInteger(_combo);
+        if (currentCombo == 3)
+            return;
+        _animator.SetInteger(_combo, currentCombo + 1);
+
+    }
+    public void ResetCombo()
+    {
+        _animator.SetInteger(_combo, 0);
     }
 }
