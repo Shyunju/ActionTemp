@@ -42,8 +42,13 @@ public class Player : MonoBehaviour
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
-        _animator.SetTrigger("Attack");
-        IncreaseCombo();
+        if (context.phase == InputActionPhase.Performed)
+        {
+            _animator.SetTrigger("Attack");
+            IncreaseCombo();
+            Debug.Log("attack");
+
+        }
     }
     private void IncreaseCombo()
     {
@@ -52,6 +57,7 @@ public class Player : MonoBehaviour
         if (currentCombo == 3)
             return;
         _animator.SetInteger(_combo, currentCombo + 1);
+        Debug.Log(_animator.GetInteger(_combo));
 
     }
     public void ResetCombo()
