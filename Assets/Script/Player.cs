@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Vector2 _curMovementInput;
     private Rigidbody _rigidbody;
     private Animator _animator;
+    //private bool _canAttack = Animator.StringToHash("CanAttack");
     private int _combo = Animator.StringToHash("Combo");
 
     private void Awake()
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     {
         Move();
     }
+    
     void Move()
     {
         Vector3 dir = transform.forward * _curMovementInput.y + transform.right * _curMovementInput.x;
@@ -42,8 +44,9 @@ public class Player : MonoBehaviour
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Performed)
+        if (context.phase == InputActionPhase.Performed )
         {
+            //_canAttack = false;
             _animator.SetTrigger("Attack");
             IncreaseCombo();
             Debug.Log("attack");
@@ -63,5 +66,10 @@ public class Player : MonoBehaviour
     public void ResetCombo()
     {
         _animator.SetInteger(_combo, 0);
+    }
+    public void OnAttackEndTrigger()
+    {
+        //Debug.Log("animation event");
+        //_canAttack = true;
     }
 }
