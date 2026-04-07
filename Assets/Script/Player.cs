@@ -1,3 +1,4 @@
+using TreeEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +9,10 @@ public class Player : MonoBehaviour
     private Vector2 _curMovementInput;
     private Rigidbody _rigidbody;
     private Animator _animator;
-    //private bool _canAttack = Animator.StringToHash("CanAttack");
+    private bool _canAttack = true;
     private int _combo = Animator.StringToHash("Combo");
+    private int _attack = Animator.StringToHash("Attack");
+    private bool _isBuffer = false;
 
     private void Awake()
     {
@@ -44,12 +47,20 @@ public class Player : MonoBehaviour
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Performed )
+        if (context.phase == InputActionPhase.Performed )//&& _animator.GetBool(_canAttack))
         {
-            //_canAttack = false;
-            _animator.SetTrigger("Attack");
-            IncreaseCombo();
-            Debug.Log("attack");
+            // 현재 공격 애니메이션 재생 중이라면?
+            if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Attacking"))
+            {
+                _isBuffer = true; // "다음에 공격하고 싶어!"라고 예약
+            }
+            else
+            {
+                _animator.SetInteger(_combo, 0);
+                _animator.ResetTrigger(_attack);
+                _animator.SetTrigger(_attack);
+                //IncreaseCombo();
+            }
 
         }
     }
@@ -57,8 +68,6 @@ public class Player : MonoBehaviour
     {
         
         int currentCombo = _animator.GetInteger(_combo);
-        if (currentCombo == 3)
-            return;
         _animator.SetInteger(_combo, currentCombo + 1);
         Debug.Log(_animator.GetInteger(_combo));
 
@@ -70,6 +79,13 @@ public class Player : MonoBehaviour
     public void OnAttackEndTrigger()
     {
         //Debug.Log("animation event");
-        //_canAttack = true;
+        if(_isBuffer)
+        {
+            _isBuffer = false;
+            IncreaseCombo();
+            _animator.SetTrigger(_attack);
+        }
+        
+        //_animator.SetBool(_canAttack, true);
     }
 }

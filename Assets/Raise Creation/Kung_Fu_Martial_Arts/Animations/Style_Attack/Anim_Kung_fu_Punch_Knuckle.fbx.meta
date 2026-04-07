@@ -8,7 +8,7 @@ AssetOrigin:
   assetPath: Assets/Raise Creation/Kung_Fu_Martial_Arts/Animations/Style_Attack/Anim_Kung_fu_Punch_Knuckle.fbx
   uploadId: 683132
 ModelImporter:
-  serializedVersion: 24200
+  serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -83,7 +83,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.67068386
+        functionName: OnAttackEndTrigger
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 60a09a44bfe30044482aa6b6f43383c4, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -114,9 +121,6 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
-    meshLodGenerationFlags: 0
-    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
