@@ -4391,7 +4391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MxM.MxMAnimator
   m_updateInterval: 0.012
-  m_playbackSpeed: 1
+  m_playbackSpeed: 1.1
   m_playbackSpeedSmoothRate: 1
   m_matchBlendTime: 0.3
   m_turnInPlaceThreshold: 45
@@ -6644,11 +6644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341280861828, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 2.4049515e-16
+      value: 2.271286e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341280861828, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.1994845e-17
+      value: -1.13281806e-17
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6672,11 +6672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 4.5248437e-15
+      value: 2.4049515e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341545092607, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.2567938e-16
+      value: -1.1994845e-17
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341601848407, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6692,11 +6692,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341601848407, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 2.4049515e-16
+      value: 2.271286e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5585836341601848407, guid: 7509674b61ab1874b9afbdd3015c09a8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.1994845e-17
+      value: -1.13281806e-17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
