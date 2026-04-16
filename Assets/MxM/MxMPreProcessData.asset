@@ -2357,14 +2357,14 @@ MonoBehaviour:
   m_generalFoldout: 0
   m_trajectoryFoldout: 0
   m_poseFoldout: 0
-  m_animationFoldout: 0
+  m_animationFoldout: 1
   m_animModuleFoldout: 1
   m_compositeFoldout: 1
   m_idleSetFoldout: 0
   m_blendSpaceFoldout: 0
   m_metaDataFoldout: 1
   m_tagsFoldout: 0
-  m_favourTagsFoldout: 0
+  m_favourTagsFoldout: 1
   m_userTagsFoldout: 0
   m_eventsFoldout: 0
   m_motionTimingFoldout: 1
