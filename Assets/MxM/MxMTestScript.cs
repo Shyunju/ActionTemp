@@ -14,6 +14,7 @@ public class MxMTestScript : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.K))
         {
+            Debug.Log("keydown");
             _mxmAnimator.BeginEvent(_eventDefinition);
         }
     }

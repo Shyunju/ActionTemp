@@ -16,8 +16,8 @@ MonoBehaviour:
   EventName: 
   EventType: 0
   Priority: -1
-  ContactCountToMatch: 1
-  ContactCountToWarp: 1
+  ContactCountToMatch: 0
+  ContactCountToWarp: 0
   ExitWithMotion: 1
   MatchPose: 1
   MatchTrajectory: 1
@@ -38,5 +38,5 @@ MonoBehaviour:
   MatchRotation: 0
   RotationWeight: 0
   RotationWarpType: 0
-  m_targetEventNamingModule: {fileID: 0}
+  m_targetEventNamingModule: {fileID: 11400000, guid: 5fb11561f5802458a9187107f6d0cf2e, type: 2}
   m_targetAnimData: {fileID: 0}
