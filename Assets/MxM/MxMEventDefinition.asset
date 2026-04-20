@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MxMEventDefinition
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MxM.MxMEventDefinition
   Id: 0
-  EventName: 
+  EventName: TestEvent
   EventType: 0
   Priority: -1
   ContactCountToMatch: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   MatchTrajectory: 1
   MatchRequireTags: 0
   FavourTagMethod: 0
-  PostEventTrajectoryMode: 1
+  PostEventTrajectoryMode: 0
   MatchTiming: 0
   ExactTimeMatch: 0
   TimingWeight: 0
